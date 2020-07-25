@@ -25,17 +25,24 @@ $ mvn clean package -DskipTests
 - create a file named DockerFile
 - Check the attached DockerFile for creating the dockerImage
 
-$ docker build yournewimagename . 
+```sh
+$ docker build imageName .
+```
 
 Run the below command to check whether the dockerimage is created
 
+
+```sh
 $ docker images 
+```
 
 #### 4.Starting the Docker container using Docker-compose 
 
 - Check the attached docker-compose.yaml file for the container configuration
 
+```sh
 $ docker compose run
+```
 
 ### Basic Docker Commands
 
