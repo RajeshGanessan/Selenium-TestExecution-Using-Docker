@@ -1,0 +1,27 @@
+version: "3"
+services:
+  Zalenium:
+    image: "dosel/zalenium"
+    container_name: zalenium
+    logging:
+      driver: "none"
+    ports:
+      - "4444:4444"
+      - "5555:5555"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: >
+      start --desiredContainers 2
+            --maxDockerSeleniumContainers 2
+            --maxTestSessions 3
+            --videoRecordingEnabled false
+  search-module:
+    image: docker/selenium-practice
+    depends_on: 
+      - Zalenium                              #Fix for firefox pronlme'
+    environment:
+      - HUB_HOST=localhost
+      - BROWSER=chrome
+      - MODULE=search-module.xml
+    volumes:
+      - ./output/search-result:/usr/share/udemy/test-output

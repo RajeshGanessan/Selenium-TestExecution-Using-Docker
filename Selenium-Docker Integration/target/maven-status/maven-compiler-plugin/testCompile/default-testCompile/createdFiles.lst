@@ -1,0 +1,4 @@
+baseTest/BaseTest.class
+com/newtours/tests/helloworld.class
+com/newtours/tests/SearchTest.class
+com/newtours/tests/bookFlightTest.class

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Search-module ">
+	<test thread-count="5" name="search-Test1">
+		<parameter name="keyword" value="java"></parameter>
+		<classes>
+			<class name="com.newtours.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test thread-count="5" name="search-test2">
+		<parameter name="keyword" value="qa"></parameter>
+		<classes>
+			<class name="com.newtours.tests.SearchTest" />
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="search-test3">
+		<parameter name="keyword" value="python"/>
+		<classes>
+			<class name="com.newtours.tests.SearchTest" />
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="search-test4">
+		<parameter name="keyword" value="javascript"/>
+		<classes>
+			<class name="com.newtours.tests.SearchTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
