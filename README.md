@@ -5,6 +5,7 @@ Getting started with Docker; basic essentials things you need to know about dock
 
 
 **What is Docker**
+
 Docker provides the ability to package and run an application in a loosely isolated environment called a container. The isolation and security allow you to run many containers simultaneously on a given host.
 
 ### Getting Started 
@@ -13,9 +14,11 @@ Docker provides the ability to package and run an application in a loosely isola
 
 ## Packaging using Maven 
 * Go to the root directory of the project and Run the following maven commands to create a jar file
-* Once runned the 
+
+```sh
 $ mvn clean
 $ mvn clean package -DskipTests
+```
 
 
 ##### 3. Build Docker image using the DockerFile 
